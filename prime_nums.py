@@ -3,7 +3,12 @@
 j =0
 stev = []
 pra=[]
-pme = int(input("primes to:"))
+
+try:
+	pme = int(input("primes to:"))
+except:
+	print("please enter a number")
+
 pmepol = pme/2
 x = 0
 ses = 0
@@ -27,7 +32,7 @@ while y <= pmepol: #replaces every number that is % by itself
 for g in stev:       # prints out the primes...
 	if g == 0:
 		continue
-	else:
+	elif g != 1:
 		j += 1
 		print(g)
 print("number of prime nums:", j)
