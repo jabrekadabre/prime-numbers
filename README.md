@@ -3,4 +3,4 @@ Find prime numbers!
 
 + no dependencies needed
 
-just run the code in the terminal
+just run the prime_nums.py in the terminal
