@@ -1,38 +1,14 @@
-#program works, but is porobably really shitty since im a beginner...
+#program works
+a = int(input("enter the value of a"))
+flag = False
+def prime():
+    for i in range(2,a):
+        if a%i == 0:
+            flag = False
+        else:
+            flag = True
 
-j =0
-stev = []
-pra=[]
-
-try:
-	pme = int(input("primes to:"))
-except:
-	print("please enter a number")
-
-pmepol = pme/2
-x = 0
-ses = 0
-while x <= pme:    #creates list of all numbers from 0 to .pme.
-	stev.append(x)
-	x += 1
-	y = 1
-while y <= pmepol: #replaces every number that is % by itself
-	y += 1
-	z = y
-	if stev[z] == 0:
-		continue
-	else:
-		while z <= pme:
-			z += y
-			if z > pme:
-				break
-			stev[z] = 0
-
-
-for g in stev:       # prints out the primes...
-	if g == 0:
-		continue
-	elif g != 1:
-		j += 1
-		print(g)
-print("number of prime nums:", j)
+if flag == True:
+    print("the given number is a prime")
+else:
+    print("the given number is not a prime")
